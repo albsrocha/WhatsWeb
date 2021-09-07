@@ -1,9 +1,9 @@
 import './index.css'
 
 
-export default function ChatListItem({onClick}){
+export default function ChatListItem({onClick, active}){
     return(
-        <div className="chatListitem" onClick={onClick}>
+        <div className={`chatListitem ${active?'active': ''}`} onClick={onClick}>
             <img src="https://www.blexar.com/avatar.png" alt="" className="chatListitemavatar"/>
             <div className="chatListitemlines">
                 <div className="chatListitemline">

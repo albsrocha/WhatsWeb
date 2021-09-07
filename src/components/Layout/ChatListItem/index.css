@@ -10,7 +10,9 @@
     background-color:#F5F5F5;
 }
 
-
+.chatListitem.active{
+    background-color:#EBEBEB
+}
 .chatListitemavatar{
     height:50px;
     width: 50px;
