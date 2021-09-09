@@ -32,6 +32,10 @@
     color:#919191;
     border-radius:50%;
 }
+.chatWindow--btn{
+    margin-left: 10px;
+    cursor: pointer;
+}
 .chatWindow--body{
     flex: 1;
     overflow-y:auto;
@@ -67,11 +71,13 @@
     padding-left: 15px;
 }
 
-.emoji-picker-react{
-    width: 100%;
-}
 
 .chatWindow--pos{
     display: flex;
     margin:0 10px;
+}
+
+.chatWindow--emojiarea{
+    overflow-y: hidden;
+    transition: all ease 0.3;
 }

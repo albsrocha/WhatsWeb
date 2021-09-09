@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 import Picker from "emoji-picker-react";
@@ -12,10 +12,12 @@ import IconButton from "@material-ui/core/IconButton";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 
 export default function ChatWindow({ text }) {
+  const [emojiOpen, setEmojiOpen] = useState(false);
+  
+  const handleEmojiClick = (event, ola) => {
+    console.log(ola);
+  };
 
-  const handleEmojiClick = () => {
-
-  }
 
   return (
     <div className="chatWindow">
@@ -42,21 +44,25 @@ export default function ChatWindow({ text }) {
 
       <div className="chatWindow--body">{text}</div>
 
-      <div className="chatWindow--emojiarea">
+      <div
+        className="chatWindow--emojiarea"
+        style={{ height: emojiOpen ? "30%" : "0%"}}
+      >
         <Picker
-        className="emoji-picker-react" 
-        onEmojiClick={handleEmojiClick}
+          pickerStyle={{ width: "100%" }}
+          native={true}
+          onEmojiClick={handleEmojiClick}
         />
       </div>
 
       <div className="chatWindow--footer">
         <div className="chatWindow--pre">
           <div className="chatWindow--headerbtn">
-          <IconButton>
+            <IconButton onClick={()=>{setEmojiOpen(false)}}>
               <CloseIcon />
             </IconButton>
 
-            <IconButton>
+            <IconButton onClick={()=>{setEmojiOpen(true)}}>
               <InsertEmoticonIcon />
             </IconButton>
 
