@@ -40,4 +40,38 @@
     background-position: center;
     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
 }
-.chatWindow--footer{}
+.chatWindow--footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:62px;
+}
+
+.chatWindow--pre{
+    display: flex;
+    margin:0 10px;
+}
+
+.chatWindow--input{
+    flex: 1;
+}
+
+.input--chat{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    color: #4A4A4A;
+    padding-left: 15px;
+}
+
+.emoji-picker-react{
+    width: 100%;
+}
+
+.chatWindow--pos{
+    display: flex;
+    margin:0 10px;
+}
