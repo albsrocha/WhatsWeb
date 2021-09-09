@@ -21,4 +21,4 @@ O básico está sendo feito ainda e vamos adicionar mais funções futuras.
 
 ### Tela Emoticons
 
-![Tela Inicial](hhttps://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
+![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)

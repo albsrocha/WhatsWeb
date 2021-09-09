@@ -6,9 +6,9 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import SearchIcon from "@material-ui/icons/Search";
 import Hidden from "@material-ui/core/Hidden";
 import "./App.css";
-import ChatListItem from "./components/Layout/ChatListItem/index.js";
-import ChatIntro from "./components/Layout/ChatIntro/index.js";
-import ChatWindow from "./components/Layout/ChatWindow/index.js";
+import ChatListItem from "./components/Layout/SideList/index.js";
+import ChatIntro from "./components/Layout/Intro/index.js";
+import ChatWindow from "./components/Layout/Chat/index.js";
 
 function App() {
   const [chatlist, setChatlist] = useState([
