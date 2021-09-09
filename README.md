@@ -11,6 +11,16 @@ Projeto para web messenger onde o objetivo é criar um App que me permite logar 
 
 O básico está sendo feito ainda e vamos adicionar mais funções futuras.
 
+Da para pesquisar no emoticons, escolher cor e finalizar tela.
+
+Próximos passos:
+
+- Inserir Login
+- Criar um histórico de mensagem
+- Juntar as mensagens mais os emoticons inseridos
+- Mostrar o botão "X" apenas quando for clicado na área de emoji
+
+
 ### Tela Inicial
 
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/tel%20inicial.png)
