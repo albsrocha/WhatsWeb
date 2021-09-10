@@ -31,9 +31,10 @@ Da para pesquisar no emoticons, escolher cor e finalizar tela.
 
 ### Tela Emoticons
 
-Data 09/09/2021
 
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
 =======
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
 
+
+Data 09/09/2021
