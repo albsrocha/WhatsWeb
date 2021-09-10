@@ -33,7 +33,6 @@ Da para pesquisar no emoticons, escolher cor e finalizar tela.
 
 Data 09/09/2021
 
-<<<<<<< HEAD
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
 =======
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
