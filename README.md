@@ -37,4 +37,4 @@ Data 09/09/2021
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
 =======
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
->>>>>>> 3bc060bfff242c2107d0fd30d2cb6ea8cc8c72f2
+
