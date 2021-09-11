@@ -13,6 +13,16 @@ O básico está sendo feito ainda e vamos adicionar mais funções futuras.
 
 Da para pesquisar no emoticons, escolher cor e finalizar tela.
 
+
+### O que está pronto:
+
+- Layout do side, top, bottom 
+- Layout do texto(msg) em andamento
+- Transcrição para texto utilizando gravação voz
+- Inserir emoticons escolhendo skins
+- Input para texto
+- Variavel pronta para inserir em banco de dados
+
 ### Próximos passos:
 
 - Inserir Login
