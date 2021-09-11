@@ -12,10 +12,10 @@ import ChatWindow from "./components/Layout/Chat/index.js";
 
 function App() {
   const [chatlist, setChatlist] = useState([
-    {chatId:1, title: 'Fulano de Tal', avatar:'https://www.blexar.com/avatar.png',message:"oi" },
-    {chatId:2, title: 'Maria de Tal', avatar:'https://www.blexar.com/avatar.png',message:"2" },
-    {chatId:3, title: 'Ciclano de Tal', avatar:'https://www.blexar.com/avatar.png',message:"o3" },
-    {chatId:4, title: 'Enzo de Tal', avatar:'https://www.blexar.com/avatar.png',message:"oi4" },
+    {chatId:1, title: 'Fulano de Tal', avatar:'https://www.blexar.com/avatar.png'},
+    {chatId:2, title: 'Maria de Tal', avatar:'https://www.blexar.com/avatar.png' },
+    {chatId:3, title: 'Ciclano de Tal', avatar:'https://www.blexar.com/avatar.png'},
+    {chatId:4, title: 'Enzo de Tal', avatar:'https://www.blexar.com/avatar.png'},
   ]);
   const [activeChat, setActiveChat] = useState({});
 
@@ -62,7 +62,7 @@ function App() {
         </div>
       </div>
       <div className="contentarea">
-        {activeChat.chatId !== undefined && <ChatWindow text={activeChat.message} />}
+        {activeChat.chatId !== undefined && <ChatWindow/>}
         {activeChat.chatId === undefined && <ChatIntro />}
       </div>
     </div>

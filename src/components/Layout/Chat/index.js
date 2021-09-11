@@ -11,13 +11,49 @@ import AttachFileIcon from "@material-ui/icons/AttachFile";
 import IconButton from "@material-ui/core/IconButton";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 
-export default function ChatWindow({ text }) {
+export default function ChatWindow() {
+  let speech = null;
+
+  let speechBrowser =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if (speechBrowser !== undefined) {
+    speech = new speechBrowser();
+  }
+
   const [emojiOpen, setEmojiOpen] = useState(false);
-  
-  const handleEmojiClick = (event, ola) => {
-    console.log(ola);
+
+  const [textInput, setTextInput] = useState("");
+
+  const [emojiColor, setEmojiColor] = useState("");
+
+  const [listen, setListen] = useState(false);
+
+  const handleEmojiClick = (event, emoji) => {
+    setEmojiColor(emoji.activeSkinTone);
+    setTextInput(textInput + emoji.emoji);
+    console.log(emoji);
   };
 
+  const handleMic = () => {
+    if (speech !== null) {
+      speech.onstart = () => {
+        setListen(true);
+      };
+
+      speech.onend = () => {
+        setListen(false);
+      };
+
+      speech.onresult = (e) => {
+        setTextInput(e.results[0][0].transcript);
+      };
+
+      speech.start();
+    }
+  };
+
+  const handleSend = () => {};
 
   return (
     <div className="chatWindow">
@@ -42,33 +78,47 @@ export default function ChatWindow({ text }) {
         </div>
       </div>
 
-      <div className="chatWindow--body">{text}</div>
+      <div className="chatWindow--body"></div>
 
       <div
         className="chatWindow--emojiarea"
-        style={{ height: emojiOpen ? "30%" : "0%"}}
+        style={{ height: emojiOpen ? "30%" : "0%" }}
       >
         <Picker
           pickerStyle={{ width: "100%" }}
           native={true}
           onEmojiClick={handleEmojiClick}
+          skinTone={emojiColor}
         />
       </div>
 
       <div className="chatWindow--footer">
         <div className="chatWindow--pre">
           <div className="chatWindow--headerbtn">
-            <IconButton onClick={()=>{setEmojiOpen(false)}}>
-              <CloseIcon />
-            </IconButton>
+            <div className="chatWindow--btn">
+              <CloseIcon
+                onClick={() => {
+                  setEmojiOpen(false);
+                }}
+                style={{
+                  width: emojiOpen ? 25 : 0,
+                  color: emojiOpen ? "#ff9688" : "#919191",
+                }}
+              />
+            </div>
 
-            <IconButton onClick={()=>{setEmojiOpen(true)}}>
-              <InsertEmoticonIcon />
-            </IconButton>
+            <div className="chatWindow--btn">
+              <InsertEmoticonIcon
+                onClick={() => {
+                  setEmojiOpen(true);
+                }}
+                style={{ color: emojiOpen ? "#009688" : "#919191" }}
+              />
+            </div>
 
-            <IconButton>
+            <div className="chatWindow--btn">
               <AttachFileIcon />
-            </IconButton>
+            </div>
           </div>
         </div>
         <div className="chatWindow--input">
@@ -76,14 +126,27 @@ export default function ChatWindow({ text }) {
             className="input--chat"
             type="text"
             placeholder="Digite uma mensagem!"
+            value={textInput}
+            onChange={(e) => {
+              setTextInput(e.target.value);
+            }}
           />
         </div>
         <div className="chatWindow--pos">
-          <div className="chatWindow--headerbtn">
-            <IconButton>
-              <MicIcon />
-            </IconButton>
-          </div>
+          {textInput === "" && (
+            <div
+              className="chatWindow--headerbtn"
+              style={{ color: listen ? "#196" : "#919191" }}
+            >
+              <MicIcon onClick={handleMic} />
+            </div>
+          )}
+
+          {textInput !== "" && (
+            <div className="chatWindow--headerbtn">
+              <SendIcon onClick={handleSend} />
+            </div>
+          )}
         </div>
       </div>
     </div>
