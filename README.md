@@ -1,4 +1,4 @@
-# Messenger Web
+# Messenger Web (whatsapp base)
 
 Projeto para web messenger onde o objetivo é criar um App que me permite logar em minha conta e conversar com pessoas na rede. Este é um projeto bem audacioso e que está me ajudando a evoluir na jornada Front-End. A inspiração é no aplicativo simples de WhatsApp por um layout pronto e que posso me guiar inicialmente, porém, posso remodelar futuramete para uma experiência visual que considero mais agradável. Eu estou tentando manter um padrão em meus trabalhos com Material UI, porém ainda vou inserir e atualizar o esquemas de estilização incluindo a variavel theme que consta no Material UI para cores e outros ajustes.
 
