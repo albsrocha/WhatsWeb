@@ -1,0 +1,32 @@
+.message--line{
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+.message--item{
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.message--text{
+    font-size:14px;
+    margin: 3px 6px 6px 36px ;
+}
+
+.message--timedate{
+    font-size:11px;
+    color:#999;
+    margin-right: 6px;
+    text-align: left;
+    height:1;
+    height:18px;
+    margin-top: -20px;
+
+}

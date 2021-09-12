@@ -10,20 +10,24 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import IconButton from "@material-ui/core/IconButton";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
+import Message from '../Message/index.js'
+
 
 export default function ChatWindow() {
+  
   let speech = null;
 
-  let speechBrowser =
-    window.SpeechRecognition || window.webkitSpeechRecognition;
+  let speechBrowser = window.SpeechRecognition || window.webkitSpeechRecognition;
 
   if (speechBrowser !== undefined) {
     speech = new speechBrowser();
-  }
+  };
 
   const [emojiOpen, setEmojiOpen] = useState(false);
 
   const [textInput, setTextInput] = useState("");
+
+  const [textMessage, setTextMessage] = useState([{},{},{}]);
 
   const [emojiColor, setEmojiColor] = useState("");
 
@@ -78,7 +82,14 @@ export default function ChatWindow() {
         </div>
       </div>
 
-      <div className="chatWindow--body"></div>
+      <div className="chatWindow--body">
+
+        {textMessage.map((item,key)=>(
+          <Message
+           key={key} 
+           data={item} />
+        ))}
+      </div>
 
       <div
         className="chatWindow--emojiarea"
