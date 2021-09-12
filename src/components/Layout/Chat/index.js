@@ -27,7 +27,10 @@ export default function ChatWindow() {
 
   const [textInput, setTextInput] = useState("");
 
-  const [textMessage, setTextMessage] = useState([{},{},{}]);
+  const [textMessage, setTextMessage] = useState([
+    {author:'1234' ,body:"Ola como se chama?",time:'19:00'},
+    {author:'1234' ,body:"Meu nome é Jussiara!",time:'19:01'},
+    {author:'134' ,body:"Ola tudo bem?", time:'20:33'}]);
 
   const [emojiColor, setEmojiColor] = useState("");
 

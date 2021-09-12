@@ -3,10 +3,13 @@ import './index.css'
 
 export default function Message({key,data}){
     return (
-        <div className="message--line">
+        <div className="message--line"
+        style={{
+            justifyContent:'flex-end'
+        }}>
             <div className="message--item">
-                <div className="message--text">OLAAA</div>
-                <div className="message--timedate">19:00</div>
+                <div className="message--text">{data.body}</div>
+                <div className="message--timedate">{data.time}</div>
             </div>
         </div>
     )
