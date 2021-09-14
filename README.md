@@ -22,14 +22,13 @@ Da para pesquisar no emoticons, escolher cor e finalizar tela.
 - Inserir emoticons escolhendo skins
 - Input para texto
 - Variavel pronta para inserir em banco de dados
+- Incluido layout para Status e pesquisa dentro das conversas 
 
 ### Próximos passos:
 
 - Inserir Login
-- Criar um histórico de mensagem
-- Juntar as mensagens mais os emoticons inseridos
-- Mostrar o botão "X" apenas quando for clicado na área de emoji
-
+- Ativar os botões restantes
+- Pequenos ajustes no layout (fontes, cores e tamanhos)
 
 ### Tela Inicial
 
