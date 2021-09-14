@@ -7,7 +7,7 @@
 }
 
 .message--item{
-    width: 10%;
+    width: 200px;
     background-color:#fff;
     border-radius: 10px;
     box-shadow: 0 1px 1px #ccc;
@@ -18,17 +18,19 @@
 }
 
 .message--text{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
     font-size:14px;
-    margin: 3px 6px 6px 36px ;
-    overflow: auto;
+    margin: 3px 36px 6px 6px ;
 }
 
 .message--timedate{
     font-size:11px;
     color:#999;
     margin-right: 6px;
-    text-align: left;
-    height:18px;
+    text-align: right;
+    height:20px;
     margin-top: -20px;
 
 }

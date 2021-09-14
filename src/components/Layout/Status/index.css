@@ -1,0 +1,89 @@
+.status--window{
+   display: flex;
+}
+
+.status--persona{
+ display: flex;
+ flex-direction: column;
+ width: 45%;
+ height:100vh;
+ background-color:#111;
+ padding :0 2%
+}
+.status--header{
+ display: flex;
+ padding: 8% 20% 8% 1%;
+ border-bottom: 1px solid #3A3A3A;
+}
+
+.status-header-user{
+     display: flex;
+     justify-content: right;
+     align-items: center;
+     flex:1;
+
+}
+.status-header-user img{
+width: 50px;
+height: 50px;
+margin-right: 2%;
+border-radius:100%
+}
+
+.status-header-user-text {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+
+.status-header-user-text-title{
+    color:aliceblue;
+    font-size: 16px;
+
+}
+
+.status-header-user-text-status{
+    color:#919191;
+    font-size: 14px;
+}
+.status--content{
+    display: flex
+}
+
+.status-others-title{
+    margin-top:2%;
+    font-size:15px;
+    color:#818181
+}
+.status--content{
+    background-color:#000;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.status--content--head{
+    padding:5px;
+    justify-content: right;
+    align-items: right;
+    height:40px;
+}
+.status--content--body{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.status--content--img{
+    color:#919191;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.status--content-text{
+    margin-top: 2%;
+    color:#919191;
+}
