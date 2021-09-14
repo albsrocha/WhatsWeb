@@ -17,8 +17,7 @@ import Hidden from "@material-ui/core/Hidden";
 export default function ChatWindow({ user }) {
   let speech = null;
 
-  let speechBrowser =
-    window.SpeechRecognition || window.webkitSpeechRecognition;
+  let speechBrowser = window.SpeechRecognition || window.webkitSpeechRecognition;
 
   if (speechBrowser !== undefined) {
     speech = new speechBrowser();
@@ -102,7 +101,7 @@ export default function ChatWindow({ user }) {
           style={{ height: emojiOpen ? "30%" : "0%" }}
         >
           <Picker
-            pickerStyle={{ width: "100%", marginTop: "10%" }}
+            pickerStyle={{ width: "100%", paddingTop: "3%" }}
             native={true}
             onEmojiClick={handleEmojiClick}
             skinTone={emojiColor}
