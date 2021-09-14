@@ -45,5 +45,7 @@ Da para pesquisar no emoticons, escolher cor e finalizar tela.
 =======
 ![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/emoji.png)
 
+### Tela Status
+![Tela Inicial](https://github.com/albsrocha/WhatsWeb/blob/main/print/status.png)
 
-Data 09/09/2021
+Data 14/09/2021
